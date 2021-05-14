@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Pizza4You</title>
+    <style>
+       
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="nav justify-content-center" style="padding: 1rem;">
+            <li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="~/html/startsida.cshtml">Hem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="~/html/menysida.cshtml">Meny</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="~/html/beställasida.cshtml">Beställ</a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="bg-dark text-center text-white">
+
+        <section style="padding: 2rem;" class="">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">ÖPPETIDER - PIZZA 4 YOU </h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Måndag - Fredag 11:00-21:00</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Lördag - Söndag 12:00-21:00</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">KONTAKT</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">036 - 14 24 34</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">pizza4you@hotmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Hakarpsvägen 67</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>        
+    </footer>
+</body>
+</html>
