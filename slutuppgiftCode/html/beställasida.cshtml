@@ -7,17 +7,32 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title></title>
+
+    <script>
+        var antal = 0;
+        var total = 0;
+
+        function laggtill(pris) {
+            total += pris;
+            antal++;
+            updateElements();
+        }
+
+        function updateElements() {
+            document.getElementById("totaltsum").innerHTML = "Total: " + total + " SEK";
+            document.getElementById("antal").innerHTML = antal;
+        }
+    </script>
 </head>
 <body>
     <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="~/bilder/menybild.jpg" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+                    <img class="d-block w-100" src="~/bilder/beställabild1.jpg" data-src="holder.js/900x400?theme=social" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="~/bilder/unnamed.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
+                    <img class="d-block w-100" src="~/bilder/beställabild2.jpg" data-src="holder.js/900x400?theme=industrial" alt="900x400" data-holder-rendered="true" style="width: 900px; height: 400px;">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -30,5 +45,131 @@
             </a>
         </div>
     </div>
+    <br />
+
+    <div class="card-deck">
+        <div class="col-2"></div>
+
+        <div class="col-8" id="beställarubrik">
+            <h2>Här kan du beställa pizzor, kebab , falafel mm. online</h2>
+        </div>
+
+        <div class="col-2">
+            <!--koden från css fungerade inte med en class eller ID så detta blev en nödlösning-->
+            <p style="color: white; position: absolute; top: 0.5rem; left: 3.75rem; font-size: 2.5rem;" id="antal">0</p>
+            <i class="fa fa-shopping-cart fa-3x"></i>
+
+            <p id="totaltsum">Totalt: 0 SEK</p>
+        </div>
+    </div>
+    <br />
+
+    <div class="card-deck" id="beställatext">
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/beställakebab.png" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">1. Kebabpizza, 85kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(85)">KÖP</button>
+                <p>Tomatsås, Ost, Kebabkött, Kebabsås </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck" id="beställatext">
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/vesuvio.jpg" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">2. Vesuvio, 85kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(85)">KÖP</button>
+                <p>Tomatsås, Ost, Skinka </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/veganskpizza.jpg" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">3. Veganskpizza, 85kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(85)">KÖP</button>
+                <p> Tomatsås, Banan, Champinjoner </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/margharita.jpg" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">4. Margharita, 85kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(85)">KÖP</button>
+                <p> Tomatsås, ost </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck" id="beställatext">
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/calzone.jpg" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">5. Calzone(Inbakad), 85kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(85)">KÖP</button>
+                <p> Tomatsås, ost </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/favorit.jpg" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">6. Favorit, 100kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(100)">KÖP</button>
+                <p> Tomatsås, ost, kebabkött, kebabsås, pommes </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="~/bilder/africana.jpg" alt="pizzabild">
+            <div class="card-body">
+                <h2 id="knapprubrik">7. Africana, 100kr</h2>
+                <button class="knapp" id="kopknapp" onclick="laggtill(100)">KÖP</button>
+                <p> Tomatsås, ananas, banana, curry </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck">
+        <div class="col-2"></div>
+
+        <div class="col-8" id="slutforbestallning" style="padding:1rem;">
+
+            <table>
+                <tr class="tabletop">
+                    <th colspan="2">
+                        Slutför din beställning
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="margin:0px;">Namn</p>
+                        <input type="text" id="namn" name="namn" placeholder="För- Efternamn..." maxlength="20" tabindex="1" required />
+                    </td>
+                    <td>
+                        <p style="margin:0px;">Tel.</p>
+                        <input type="text" name="tel" id="tel" placeholder="Tel..." maxlength="9" tabindex="2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="margin:0px;">Adress</p>
+                        <input type="text" id="adress" name="adress" placeholder="Adress..." tabindex="3" maxlength="30" required />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <div style="text-align:center">
+                <button id="slutforbestallning">Slutför beställning</button>
+            </div>
+        </div>
+        <div class="col-2">
+        </div>
+    </div>
+
+    <br />
 </body>
 </html>

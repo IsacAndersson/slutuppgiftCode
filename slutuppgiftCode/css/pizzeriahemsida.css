@@ -1,0 +1,105 @@
+﻿* {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 2rem;
+}
+
+.nav {
+    padding: 1rem;
+    background-color: #007bff25;
+}
+
+#navbar {
+    font-size: 2rem;
+}
+    #navbar a:hover {
+        color: #6E7AFF;
+    }
+.nav-item a{
+    font-weight:bold;
+    color: black;
+}
+#logga {
+    width: 3rem;
+}
+#footer {
+    padding: 2rem;
+    font-size: 2rem;
+}
+#footer h2 {
+        font-family: "Amatic SC", sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+}
+#containertext p{
+    font-size:2rem;    
+}
+
+#containertext h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+#menydeskrivning {
+    text-align:center;
+}
+
+#salladsbar {
+    padding: 0 10%;
+}
+
+#Pizzaname {
+    font-size: 2rem;
+    display: inline;
+}
+
+#Pizza th, td {
+    font-size: 3rem;
+}
+
+#tablenumber {
+    padding-left: 5rem;
+}
+
+#beställarubrik h2{
+    font-family: "Amatic SC", sans-serif;
+    padding: 1rem;
+    margin:0;
+    text-align: center;
+    font-size: 3rem;
+}   
+#beställatext{
+    padding:1rem;
+}
+#beställatext h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+#beställatext p {
+    font-size: 2rem;
+}
+
+#knapprubrik {
+    display: inline-block;
+}
+.knapp {
+    position: relative;
+    left: 0.5rem;
+    bottom: 0.5rem
+}
+#slutforbestallning table,button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slutforbestallning button {
+    padding: 1rem;
+}
+
+
+#slutforbestallning th {
+    text-align: center
+}
+

@@ -95,15 +95,24 @@
     <Content Include="App_Data\pizzadatabas_log.ldf">
       <DependentUpon>pizzadatabas.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\SQLQuery1.sql" />
-    <Content Include="bilder\disciplinare_avpn_2.jpg" />
+    <Content Include="bilder\africana.jpg" />
+    <Content Include="bilder\beställabild1.jpg" />
+    <Content Include="bilder\beställabild2.jpg" />
+    <Content Include="bilder\beställakebab.png" />
+    <Content Include="bilder\calzone.jpg" />
+    <Content Include="bilder\startsida2.jpg" />
+    <Content Include="bilder\favorit.jpg" />
+    <Content Include="bilder\margharita.jpg" />
     <Content Include="bilder\menybild.jpg" />
-    <Content Include="bilder\pizza-crust-bubbles.jpg" />
-    <Content Include="bilder\pizza4you.jpg" />
+    <Content Include="bilder\startsida1.jpg" />
     <Content Include="bilder\pizza4you.png" />
-    <Content Include="bilder\test1.jpg" />
-    <Content Include="bilder\test2.jpg" />
-    <Content Include="bilder\unnamed.jpg" />
+    <Content Include="bilder\startsidacontentbild.jpg" />
+    <Content Include="bilder\startsidacontentbild2.jpg" />
+    <Content Include="bilder\menybild2.jpg" />
+    <Content Include="bilder\veganskpizza.jpg" />
+    <Content Include="bilder\vesuvio.jpg" />
+    <Content Include="css\pizzeriahemsida.css" />
+    <Content Include="css\pizzeriahemsidaminified.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
